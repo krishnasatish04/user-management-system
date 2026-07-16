@@ -1,0 +1,25 @@
+
+
+[
+  {
+    "id": 1,
+    "name": "Admin User",
+    "email": "admin@test.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "email": "john@test.com",
+    "password": "john123",
+    "role": "Member"
+  },
+  {
+    "id": 3,
+    "name": "Jane Smith",
+    "email": "jane@test.com",
+    "password": "jane123",
+    "role": "Member"
+  }
+]
