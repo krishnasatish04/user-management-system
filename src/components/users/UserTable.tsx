@@ -30,7 +30,7 @@ import UserFormDialog from "./UserFormDialog";
 
 interface Props {
     users: User[];
-    currentUserRole: "Admin" | "Member";
+    currentUserRole?: "Admin" | "Member";
 }
 
 const UserTable = ({ users, currentUserRole }: Props) => {
@@ -50,7 +50,7 @@ const UserTable = ({ users, currentUserRole }: Props) => {
 
 
     const handleChangePage = (
-        event: unknown,
+      
         newPage: number
     ) => {
         setPage(newPage);

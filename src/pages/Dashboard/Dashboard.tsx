@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 
 import {
   Box,
@@ -10,16 +10,14 @@ import AddIcon from "@mui/icons-material/Add";
 
 import { useDispatch, useSelector } from "react-redux";
 
-import usersData from "../../data/data.json";
 
 import DashboardStats from "../Dashboard/DashboardStats";
 import SearchFilter from "../Dashboard/SearchFilter";
 import UserTable from "../../components/users/UserTable";
 
-import { setUsers } from "../../redux/actions/userActions";
 
 import type { RootState } from "../../models/RootState";
-import type { User } from "../../models/User";
+
 
 import UserFormDialog from "../../components/users/UserFormDialog";
 import { addUser } from "../../redux/actions/userActions";

@@ -11,7 +11,7 @@ import {
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import GroupIcon from "@mui/icons-material/Group";
 import PersonIcon from "@mui/icons-material/Person";
-import LogoutIcon from "@mui/icons-material/Logout";
+
 
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -110,24 +110,6 @@ const Sidebar = () => {
       </List>
 
       <Divider sx={{ bgcolor: "rgba(255,255,255,0.1)" }} />
-
-      {/* Logout */}
-{/* 
-      <List>
-        <ListItemButton
-          sx={{
-            color: "white",
-            m: 1,
-            borderRadius: 2,
-          }}
-        >
-          <ListItemIcon sx={{ color: "white" }}>
-            <LogoutIcon />
-          </ListItemIcon>
-
-          <ListItemText primary="Logout" />
-        </ListItemButton>
-      </List> */}
     </Box>
   );
 };
