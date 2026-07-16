@@ -29,6 +29,9 @@ const SearchFilter = ({
           onChange={(e) =>
             onSearchChange(e.target.value)
           }
+          sx={{
+            bgcolor: "background.paper",
+          }}
         />
       </Grid>
 
@@ -41,6 +44,9 @@ const SearchFilter = ({
           onChange={(e) =>
             onRoleChange(e.target.value)
           }
+          sx={{
+            bgcolor: "background.paper",
+          }}
         >
           <MenuItem value="">All Roles</MenuItem>
           <MenuItem value="Admin">Admin</MenuItem>

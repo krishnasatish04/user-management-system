@@ -97,6 +97,13 @@ const UserTable = ({ users, currentUserRole }: Props) => {
                             <TableRow
                                 key={user.id}
                                 hover
+                                onClick={() => navigate(`/profile/${user.id}`)}
+                                sx={{
+                                    cursor: "pointer",
+                                    "&:hover": {
+                                        bgcolor: "action.hover",
+                                    },
+                                }}
                             >
                                 <TableCell>
                                     <div
@@ -143,7 +150,10 @@ const UserTable = ({ users, currentUserRole }: Props) => {
                                     <Tooltip title="View">
                                         <IconButton
                                             color="primary"
-                                            onClick={() => navigate(`/profile/${user.id}`)}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate(`/profile/${user.id}`);
+                                            }}
                                         >
                                             <VisibilityIcon />
                                         </IconButton>
@@ -154,7 +164,8 @@ const UserTable = ({ users, currentUserRole }: Props) => {
                                             <Tooltip title="Edit">
                                                 <IconButton
                                                     color="warning"
-                                                    onClick={() => {
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
                                                         setSelectedUser(user);
                                                         setOpenEdit(true);
                                                     }}
@@ -165,7 +176,8 @@ const UserTable = ({ users, currentUserRole }: Props) => {
 
                                             <Tooltip title="Delete">
                                                 <IconButton color="error" 
-                                                    onClick={() => {
+                                                    onClick={(e) => {
+                                                         e.stopPropagation();
                                                         const updatedUsers = users.filter(
                                                             (item) => item.id !== user.id
                                                         );

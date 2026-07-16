@@ -31,11 +31,11 @@ const Sidebar = () => {
       icon: <DashboardIcon />,
       path: "/dashboard",
     },
-    {
-      label: "Users",
-      icon: <GroupIcon />,
-      path: "/users",
-    },
+    // {
+    //   label: "Users",
+    //   icon: <GroupIcon />,
+    //   path: "/users",
+    // },
     {
       label: "Profile",
       icon: <PersonIcon />,
