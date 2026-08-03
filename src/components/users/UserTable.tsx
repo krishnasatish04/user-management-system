@@ -50,7 +50,7 @@ const UserTable = ({ users, currentUserRole }: Props) => {
 
 
     const handleChangePage = (
-      
+        _event: React.MouseEvent<HTMLButtonElement> | null,
         newPage: number
     ) => {
         setPage(newPage);
