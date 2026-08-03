@@ -5,6 +5,7 @@ import {
   Typography,
   TextField,
   Button,
+  Divider
 } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -88,6 +89,70 @@ const Login = () => {
         >
           Login
         </Button>
+
+          <Divider
+          sx={{
+            my:3
+          }}
+        >
+          Demo Credentials
+        </Divider>
+
+
+
+
+
+        <Box
+          sx={{
+            bgcolor:"grey.100",
+            p:2,
+            borderRadius:2
+          }}
+        >
+
+
+          <Typography variant="body2">
+
+            <b>Admin</b>
+
+            <br/>
+
+            Email:
+            admin@test.com
+
+            <br/>
+
+            Password:
+            admin123
+
+
+          </Typography>
+
+
+
+          <Box />
+
+
+
+          <Typography variant="body2">
+
+            <b>Member</b>
+
+            <br/>
+
+            Email:
+            member@test.com
+
+            <br/>
+
+            Password:
+            member123
+
+
+          </Typography>
+
+
+        </Box>
       </Paper>
     </Box>
   );
